@@ -4,16 +4,10 @@ namespace SibCCSPETest.Data
 {
     public class UserCreateDTO
     {
-        [Display(Name = "Фамилия")]
+        [Display(Name = "ФИО")]
         [Required(ErrorMessage = "Обязательное поле для заполнения")]
-        [StringLength(30, MinimumLength = 10, ErrorMessage = "Количество символов от 10 до 30")]
-        public string LastName { get; set; } = string.Empty;
-        [Display(Name = "Имя")]
-        [Required(ErrorMessage = "Обязательное поле для заполнения")]
-        [StringLength(30, MinimumLength = 10, ErrorMessage = "Количество символов от 10 до 30")]
-        public string FirstName { get; set; } = string.Empty;
-        [Display(Name = "Отчество")]
-        public string? Surname { get; set; }
+        [StringLength(90, ErrorMessage = "Количество символов до 90")]
+        public string FullName { get; set; } = string.Empty;
         [Display(Name = "Логин")]
         [Required(ErrorMessage = "Обязательное поле для заполнения")]
         public string Login { get; set; } = string.Empty;

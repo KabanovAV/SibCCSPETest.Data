@@ -9,11 +9,11 @@ namespace SibCCSPETest.Data
         public int Id { get; set; }
         [Display(Name = "Фамилия")]
         [Required(ErrorMessage = "Обязательное поле для заполнения")]
-        [StringLength(30, MinimumLength = 10, ErrorMessage = "Количество символов от 10 до 30")]
+        [StringLength(30, ErrorMessage = "Количество символов до 30")]
         public string LastName { get; set; } = string.Empty;
         [Display(Name = "Имя")]
         [Required(ErrorMessage = "Обязательное поле для заполнения")]
-        [StringLength(30, MinimumLength = 10, ErrorMessage = "Количество символов от 10 до 30")]
+        [StringLength(30, ErrorMessage = "Количество символов до 30")]
         public string FirstName { get; set; } = string.Empty;
         [Display(Name = "Отчество")]
         public string? Surname { get; set; }
