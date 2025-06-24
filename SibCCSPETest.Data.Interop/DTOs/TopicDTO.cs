@@ -7,8 +7,11 @@ namespace SibCCSPETest.Data
         public int Id { get; set; }
         [Display(Name = "Название")]
         [Required(ErrorMessage = "Обязательное поле для заполнения")]
-        [StringLength(100, MinimumLength = 10, ErrorMessage = "Количество символов от 10 до 100")]
+        [StringLength(100, ErrorMessage = "Количество символов до 100")]
         public string Title { get; set; } = string.Empty;
         public int SpecializationId { get; set; }
+        public string SpecializationTitle { get; set; } = string.Empty;
+        public DateTime CreatedDate { get; set; }
+        public DateTime ChangedDate { get; set; }
     }
 }

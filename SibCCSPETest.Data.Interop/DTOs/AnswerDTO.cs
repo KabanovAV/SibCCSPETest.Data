@@ -11,5 +11,7 @@ namespace SibCCSPETest.Data
         public int QuestionId { get; set; }
         [Display(Name = "Верный ответ")]
         public bool IsCorrect { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public DateTime ChangedDate { get; set; }
     }
 }

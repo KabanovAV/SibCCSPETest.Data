@@ -32,7 +32,7 @@ namespace SibCCSPETest.Data
 
         private IQueryable<T> BuildQuery(Expression<Func<T, bool>>? expression = null, string? includeProperties = null)
         {
-            IQueryable<T> query = dbSet;
+            IQueryable<T> query = expression == null ? dbSet : dbSet.Where(expression);
             if (!string.IsNullOrWhiteSpace(includeProperties))
             {
                 foreach (var property in includeProperties
@@ -41,7 +41,7 @@ namespace SibCCSPETest.Data
                     query = query.Include(property);
                 }
             }
-            return expression == null ? query : query.Where(expression);
+            return query;
         }
     }
 }
