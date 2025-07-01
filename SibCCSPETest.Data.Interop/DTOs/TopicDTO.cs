@@ -11,7 +11,5 @@ namespace SibCCSPETest.Data
         public string Title { get; set; } = string.Empty;
         public int SpecializationId { get; set; }
         public string SpecializationTitle { get; set; } = string.Empty;
-        public DateTime CreatedDate { get; set; }
-        public DateTime ChangedDate { get; set; }
     }
 }

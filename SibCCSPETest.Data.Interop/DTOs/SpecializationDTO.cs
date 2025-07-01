@@ -9,7 +9,5 @@ namespace SibCCSPETest.Data
         [Required(ErrorMessage = "Обязательное поле для заполнения")]
         [StringLength(100, ErrorMessage = "Количество символов до 100")]
         public string Title { get; set; } = string.Empty;
-        public DateTime CreatedDate { get; set; }
-        public DateTime ChangedDate { get; set; }
     }
 }

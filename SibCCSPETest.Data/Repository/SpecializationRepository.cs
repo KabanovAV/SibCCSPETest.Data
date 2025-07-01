@@ -10,7 +10,7 @@ namespace SibCCSPETest.Data
         public async Task<IEnumerable<Specialization>> GetAllSpecializationAsync(Expression<Func<Specialization, bool>>? expression = null, string? includeProperties = null)
             => await GetAllAsync(expression, includeProperties);
 
-        public async Task<Specialization?> GetSpecializationAsync(Expression<Func<Specialization, bool>> expression, string? includeProperties = null)
+        public async Task<Specialization> GetSpecializationAsync(Expression<Func<Specialization, bool>> expression, string? includeProperties = null)
             => await GetAsync(expression, includeProperties);
 
         public async Task AddSpecializationAsync(Specialization entity) => await AddAsync(entity);

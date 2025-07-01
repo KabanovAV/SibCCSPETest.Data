@@ -27,6 +27,7 @@ namespace SibCCSPETest.Data
         }
 
         public async Task AddAsync(T entity) => await dbSet.AddAsync(entity);
+        public async Task AddRangeAsync(List<T> entities) => await dbSet.AddRangeAsync(entities);
         public void Update(T entity) => dbSet.Update(entity);
         public void Delete(T entity) => dbSet.Remove(entity);
 

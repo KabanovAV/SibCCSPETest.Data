@@ -8,7 +8,6 @@ namespace SibCCSPETest.Data
         [Display(Name = "Название")]
         [Required(ErrorMessage = "Обязательное поле для заполнения")]
         public string Title { get; set; } = string.Empty;
-        public DateTime CreatedDate { get; set; }
-        public DateTime ChangedDate { get; set; }
+        public List<AnswerDTO>? AnswerItems { get; set; }
     }
 }

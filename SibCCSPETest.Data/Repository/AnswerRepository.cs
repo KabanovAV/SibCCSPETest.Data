@@ -14,6 +14,7 @@ namespace SibCCSPETest.Data
             => await GetAsync(expression, includeProperties);
 
         public async Task AddAnswerAsync(Answer entity) => await AddAsync(entity);
+        public async Task AddRangeAnswerAsync(List<Answer> entities) => await AddRangeAsync(entities);
         public void UpdateAnswer(Answer entity) => Update(entity);
         public void DeleteAnswer(Answer entity) => Delete(entity);
     }

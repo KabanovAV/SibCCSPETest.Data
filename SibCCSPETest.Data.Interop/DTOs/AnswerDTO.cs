@@ -9,9 +9,8 @@ namespace SibCCSPETest.Data
         [Required(ErrorMessage = "Обязательное поле для заполнения")]
         public string Title { get; set; } = string.Empty;
         public int QuestionId { get; set; }
+        public string QuestionTitle { get; set; } = string.Empty;
         [Display(Name = "Верный ответ")]
         public bool IsCorrect { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime ChangedDate { get; set; }
     }
 }

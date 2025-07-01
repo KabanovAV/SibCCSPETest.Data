@@ -17,7 +17,5 @@ namespace SibCCSPETest.Data
         [Display(Name = "Окончание курсов")]
         [Required(ErrorMessage = "Обязательное поле для заполнения")]
         public DateTime End { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime ChangedDate { get; set; }
     }
 }

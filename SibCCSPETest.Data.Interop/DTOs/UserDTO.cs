@@ -17,7 +17,5 @@ namespace SibCCSPETest.Data
         public string Password { get; set; } = string.Empty;
         public string? Organization { get; set; }
         public string? Position { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime ChangedDate { get; set; }
     }
 }

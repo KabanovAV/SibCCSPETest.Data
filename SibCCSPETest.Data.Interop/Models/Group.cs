@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace SibCCSPETest.Data
 {
@@ -20,8 +21,11 @@ namespace SibCCSPETest.Data
         public DateTime CreatedDate { get; set; }
         public DateTime ChangedDate { get; set; }
 
+        [JsonIgnore]
         public Specialization? Specialization { get; set; }
+        [JsonIgnore]
         public List<GroupUser>? GroupUser { get; set; }
+        [JsonIgnore]
         public Setting? Setting { get; set; }
     }
 }
